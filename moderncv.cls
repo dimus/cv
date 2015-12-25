@@ -379,7 +379,7 @@
 \newlength{\bibindent}
 \setlength{\bibindent}{1.5em}
 % bibliography item label
-\newcommand*{\bibliographyitemlabel}{}% use \@biblabel{\arabic{enumiv}} for BibTeX labels
+\newcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% use \@biblabel{\arabic{enumiv}} for BibTeX labels
 %\newif\if@multibibfirstbib\@multibibfirstbibfalse
 % bibliography head (section, etc}, depending on whether multibib is used
 \newcommand*{\bibliographyhead}[1]{\section{#1}}
@@ -388,6 +388,8 @@
 \newenvironment{thebibliography}[1]{}{}
 \newcommand*{\newblock}{\hskip .11em\@plus.33em\@minus.07em}
 \let\@openbib@code\@empty
+\def\@biblabel#1{#1.}
+
 
 % itemize, enumerate and description environment
 \setlength{\leftmargini}   {1em}
@@ -414,13 +416,13 @@
 \newcommand*\descriptionlabel[1]{\hspace\labelsep\normalfont\bfseries#1}
 % hooks to adjust spacing (idea by Jakob Schiøtz; see http://dcwww.camd.dtu.dk/~schiotz/comp/LatexTips/tweaklist.sty)
 \RequirePackage{tweaklist}% distributed with moderncv, not found on ctan and slightly modified
-\renewcommand*{\itemhook}{
-  \setlength{\topsep}{0pt}%
-  \setlength{\parsep}{0pt}%
-  \setlength{\parskip}{0pt}%
-  \setlength{\itemsep}{0pt}}
-\renewcommand*{\enumhook}{\itemhook{}}
-\renewcommand*{\deschook}{\itemhook{}}
+% \renewcommand*{\itemhook}{
+%   \setlength{\topsep}{0pt}%
+%   \setlength{\parsep}{0pt}%
+%   \setlength{\parskip}{0pt}%
+%   \setlength{\itemsep}{0pt}}
+% \renewcommand*{\enumhook}{\itemhook{}}
+% \renewcommand*{\deschook}{\itemhook{}}
 
 % classical \today definition
 \def\today{\ifcase\month\or
