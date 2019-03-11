@@ -6,6 +6,7 @@
 *.blg
 *.dvi
 *.rtf
+*.gz
 t
 .latexmkrc
 *.json
