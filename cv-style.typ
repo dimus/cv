@@ -17,6 +17,7 @@
   set text(size: 11pt, font: "Libertinus Serif")
   set par(justify: false, leading: 0.65em)
   show link: set text(fill: green)
+  show "---": sym.dash.em
   show "--": sym.dash.en
   show bibliography: it => {
     show regex("\[\d+\]"): m => m.text.slice(1, -1) + "."

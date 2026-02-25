@@ -20,12 +20,11 @@
     #link("mailto:dmozzherin@gmail.com")[dmozzherin\@gmail.com] \
     #link("http://globalnames.org")[globalnames.org]
   ],
-    image("picture.jpg", width: 80pt),
+    box(stroke: 0.2pt + luma(180), inset: 1mm, image("picture.jpg", width: 80pt)),
 )
 
 #v(0.5em)
 #hr
-#v(0.5em)
 
 // ── EXPERIENCE / PROFESSIONAL DEVELOPMENT ──────────────────────────────────
 
@@ -48,7 +47,7 @@
 
 #cv-entry(
   "1979--1985", "Undergraduate Student",
-  "Ural State University --- Biology Major", "Yekaterinburg, Russia",
+  "Ural State University -- Biology Major", "Yekaterinburg, Russia",
   "Department of Physiology and Biochemistry of Plants",
   "Speciality: Biologist, Teacher of Biology and Chemistry",
 )
