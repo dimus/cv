@@ -1,8 +1,10 @@
 // CV style – moderncv classic/green inspired
+#import "@preview/fontawesome:0.5.0": *
 
 // ── colours & dimensions ───────────────────────────────────────────────────
 
 #let green = rgb("#007700")
+#let lgray = rgb("#aaaaaa")
 #let gray  = rgb("#777777")
 #let dgray = rgb("#444444")
 
@@ -77,6 +79,9 @@
   )
   v(0.2em)
 }
+
+// doi emphasis
+#let doi(id) = link("https://doi.org/" + id)[#text(fill: green)[#id]]
 
 // date | title (left)   comment (right, italic gray)
 #let cv-item-comment(date, title, comment) = {

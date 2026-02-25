@@ -15,10 +15,10 @@
     #text(size: 10pt, style: "italic", fill: gray)[Curriculum Vitae]
     #v(0.4em)
     #set text(size: 9pt, fill: gray)
-    Illinois Natural History Survey, 1816 South Oak Str., Champaign, IL \
-    (508) 566-7744 \
-    #link("mailto:dmozzherin@gmail.com")[dmozzherin\@gmail.com] \
-    #link("http://globalnames.org")[globalnames.org]
+    #fa-location-dot(fill: lgray, size: 8pt)#h(0.8em)Illinois Natural History Survey, 1816 South Oak Str., Champaign, IL \
+    #fa-phone(fill: lgray, size: 8pt)#h(0.8em)#[(508) 566-7744] \
+    #fa-envelope(fill: lgray, size: 8pt)#h(0.8em)#link("mailto:dmozzherin@gmail.com")[dmozzherin\@gmail.com] \
+    #fa-globe(fill: lgray, size: 8pt)#h(0.8em)#link("http://globalnames.org")[globalnames.org]
   ],
     box(stroke: 0.2pt + luma(180), inset: 1mm, image("picture.jpg", width: 80pt)),
 )
@@ -49,7 +49,7 @@
   "1979--1985", "Undergraduate Student",
   "Ural State University -- Biology Major", "Yekaterinburg, Russia",
   "Department of Physiology and Biochemistry of Plants",
-  "Speciality: Biologist, Teacher of Biology and Chemistry",
+  "Specialty: Biologist, Teacher of Biology and Chemistry",
 )
 
 #subsection[Professional Experience]
@@ -67,10 +67,10 @@
   "2008--2015", "Research Associate, Scientific Informatics Project Leader",
   "Marine Biological Laboratory", "Woods Hole, MA",
   "Encyclopedia of Life, Global Names Architecture",
-  [Lead the development of Global Names project. Participated in
-  development of Encyclopedia of Life (EOL). In 2014--2015 --- was the
-  lead system administrator of EOL. Was responsible for migration of EOL
-  software and hardware from Harvard University to Smithsonian Institute.],
+  [Led the development of the Global Names project. Participated in the
+  development of Encyclopedia of Life (EOL). In 2014--2015, served as the
+  lead system administrator of EOL. Was responsible for migrating EOL
+  software and hardware from Harvard University to the Smithsonian Institution.],
 )
 
 #cv-entry(
@@ -163,25 +163,25 @@
 #cv-item-comment(
   "2025--present",
   [#link("https://github.com/sfborg/gndb")[GNDB]],
-  "Flexible importer of any Species File Group Archive file to GNverifier database",
+  "Imports Species File Group Archive files into the GNverifier database",
 )
 
 #cv-item-comment(
   "2025--present",
   [#link("https://github.com/sfborg/harvester")[Harvester]],
-  "Application to convert non-standard dataset to Species File Group Archive",
+  "Converts non-standard datasets to Species File Group Archive format",
 )
 
 #cv-item-comment(
   "2025--present",
   [#link("https://github.com/sfborg/sf")[SF Converter]],
-  "Universal converter between a variety of biodiversity format based of Species File Group Archive",
+  "Universal converter between various biodiversity formats based on Species File Group Archive",
 )
 
 #cv-item-comment(
   "2024--present",
   [#link("https://github.com/sfborg/sflib")[SFLib Library]],
-  "Universal converter between a variety of biodiversity format based of Species File Group Archive",
+  "Universal converter between various biodiversity formats based on Species File Group Archive",
 )
 
 #cv-item-comment(
@@ -208,7 +208,7 @@
   "Compares two checklist files",
 )
 
-Global Names Diff allows to run reconciliation and resolution locally, without Internet access.
+Global Names Diff enables reconciliation and resolution locally, without Internet access.
 
 #cv-item-comment(
   "2020--present",
@@ -234,7 +234,7 @@ Global Names Diff allows to run reconciliation and resolution locally, without I
   "Scientific name finder",
 )
 
-Global Names Finder is very performant tool/library for scientific names detection. It allows to process 300,000 books aggregated in Biodiversity Heritage Library in less than 4 hours. GitHub stars: 53.
+Global Names Finder is a high-performance tool and library for scientific name detection. It can process 300,000 books aggregated in the Biodiversity Heritage Library in less than 4 hours. GitHub stars: 53.
 
 #cv-item-comment(
   "2015--present",
@@ -242,7 +242,7 @@ Global Names Finder is very performant tool/library for scientific names detecti
   "Scientific name parsing",
 )
 
-Global Names Parser is the state of the art scientific names parsing program. It allows to process 30 million scientific names in less than 5 minutes. GitHub Stars: 52.
+Global Names Parser is a state-of-the-art scientific name parsing program. It can process 30 million scientific names in less than 5 minutes. GitHub Stars: 52.
 
 #cv-item-comment(
   "2015--present",
@@ -250,7 +250,7 @@ Global Names Parser is the state of the art scientific names parsing program. It
   "Taxonomic resolution of scientific names",
 )
 
-This name reconciliation/resolution service is now succeeded by Global Names Verifier.
+This reconciliation and resolution service has since been superseded by Global Names Verifier.
 
 #cv-item-comment(
   "2015--2018",
@@ -264,9 +264,9 @@ This name reconciliation/resolution service is now succeeded by Global Names Ver
   "Scientific names finding service",
 )
 
-Global Names Recognition and Discovery tool was a name-finding tool. It
-was used to create Biodiversity Heritage Library index. Now it is
-succeeded by Global Names Finder.
+Global Names Recognition and Discovery was a name-finding tool used to build
+the Biodiversity Heritage Library index. It has since been superseded by
+Global Names Finder.
 
 #cv-item-comment(
   "2012--2020",
@@ -283,7 +283,7 @@ texts.
   "A library to determine edit distance between strings",
 )
 
-DamerauLevenshtein is library written in C and Ruby. It is used to calculate differences between strings. GitHub stars: 150, Number of #link("https://rubygems.org/gems/damerau-levenshtein")[RubyGem] downloads: 4,322,641.
+DamerauLevenshtein is a library written in C and Ruby for calculating edit distance between strings. GitHub stars: 150, #link("https://rubygems.org/gems/damerau-levenshtein")[RubyGem] downloads: 4,322,641.
 
 #cv-item-comment(
   "2012--2017",
@@ -294,10 +294,10 @@ DamerauLevenshtein is library written in C and Ruby. It is used to calculate dif
 #cv-item-comment(
   "2011--present",
   [#link("https://github.com/GlobalNamesArchitecture/dwca-hunter")[DwCA Hunter]],
-  "A convertor of biodiversity resources to DarwinCore Archive",
+  "A converter for biodiversity resources to DarwinCore Archive",
 )
 
-DwCA Hunter is a tool for harvesting more than 100 data-sources used in Global Names Resolver and Global Names Verifier.
+DwCA Hunter harvests data from more than 100 sources used by Global Names Resolver and Global Names Verifier.
 
 #cv-item-comment(
   "2010--present",
@@ -305,7 +305,7 @@ DwCA Hunter is a tool for harvesting more than 100 data-sources used in Global N
   "A DarwinCore Archive reader/writer",
 )
 
-DwCArchive is a library to create and consume data published as a Darwin Core Archive files. This library still actively used to harvest data for Global Names Resolver and Global Names Verifier.
+DwCArchive is a library for creating and consuming Darwin Core Archive files. It is still actively used to harvest data for Global Names Resolver and Global Names Verifier.
 
 #cv-item-comment(
   "2009--2020",
@@ -313,7 +313,7 @@ DwCArchive is a library to create and consume data published as a Darwin Core Ar
   "A fuzzy-matching library for scientific names",
 )
 
-Taxamatch library was developed to make fuzzy-matching of scientific names possible. This project is now succeeded by fuzzy-matching abilities of Global Names Verifier.
+The Taxamatch library was developed to enable fuzzy matching of scientific names. It has since been superseded by the fuzzy-matching capabilities of Global Names Verifier.
 
 #cv-item-comment(
   "2009--2013",
@@ -330,7 +330,7 @@ hierarchies.
   "Global index of scientific names",
 )
 
-Global Names Index was the first attempt to create a reconciliation/resolution service. It is now succeeded by Global Names Verifier and Global Names Resolver.
+Global Names Index was the first attempt at a name reconciliation and resolution service. It has since been superseded by Global Names Verifier and Global Names Resolver.
 
 #cv-item-comment(
   "2008--present",
@@ -338,7 +338,7 @@ Global Names Index was the first attempt to create a reconciliation/resolution s
   "Scientific names parser",
 )
 
-Biodiversity application and Ruby library was the first sophisticated scientific name parser. According to #link("https://biogems.info/")[BioRuby project] biodiversity Gem is the most downloadable biological library for Ruby language. It is 15 years old project and is still actively used by many Ruby-based applications. GitHub stars: 36, downloads according to
+The Biodiversity application and Ruby library was the first sophisticated scientific name parser. According to the #link("https://biogems.info/")[BioRuby project], the biodiversity gem is the most downloaded biological library for Ruby. Now over 15 years old, it remains actively used by many Ruby-based applications. GitHub stars: 36, downloads according to
 #link("https://rubygems.org/gems/biodiversity")[RubyGem.org]: 256,000.
 
 #cv-item-comment(
@@ -412,12 +412,12 @@ BioMail, a precursor to Google Scholar, enabled researchers to receive emails wi
 
 #cv-item-comment(
   "2018--present", [System Administration],
-  "Training of Hernan Hereira, SFG system administrator, on Kubernetes, ZFS management. Maintaining documentation describing SFG servers, operating and file systems.",
+  "Trained Hernan Hereira, SFG system administrator, in Kubernetes and ZFS management. Maintained documentation for SFG servers, operating systems, and file systems.",
 )
 
 #cv-item-comment(
   "2020--present", [Programming],
-  "Training of Geoff Ower by development of BHL Names project, AI development",
+  "Trained Geoff Ower through development of the BHL Names project and AI tools",
 )
 
 #subsection[Undergraduate Mentorship]
@@ -446,6 +446,14 @@ The Google Summer of Code is a prestigious and competitive program. Google caref
   "2013, 2014",
   [Scientific Illustration Students Mentoring],
   "Rhode Island School of Design, Marine Biological Laboratory",
+)
+
+#subsection[K-12 Outreach and Mentoring]
+
+#cv-item-comment(
+  "2025",
+  [High School Students mentoring],
+  "UHS Executive Internship program",
 )
 
 // ── LEADERSHIP ─────────────────────────────────────────────────────────────
@@ -567,21 +575,21 @@ The Google Summer of Code is a prestigious and competitive program. Google caref
 
 #subsection[Academic Presentations (most recent)]
 
-+ Mozzherin D, Paul D, Whitmire A (2024) Can We Standardize Name Reconciliaton via OpenRefine? Biodiversity Information Science and Standards 8: e134910. 10.3897/biss.8.134910 
++ Mozzherin D, Paul D, Whitmire A (2024) Can We Standardize Name Reconciliaton via OpenRefine? Biodiversity Information Science and Standards 8: e134910. #doi("10.3897/biss.8.134910") 
 
-+ Mozzherin D, Ower G (2024) SQLite: A “Frictionless” Solution for Exchange of Biodiversity Data? Biodiversity Information Science and Standards 8: e138931. 10.3897/biss.8.138931
++ Mozzherin D, Ower G (2024) SQLite: A “Frictionless” Solution for Exchange of Biodiversity Data? Biodiversity Information Science and Standards 8: e138931. #doi("10.3897/biss.8.138931")
 
-+ Dmitry Mozzherin, Deborah Paul: Preservation Strategies for Biodiversity Data, Oral Presentation, TDWG 2023, 10.3897/biss.7.111453
++ Dmitry Mozzherin, Deborah Paul: Preservation Strategies for Biodiversity Data, Oral Presentation, TDWG 2023, #doi("10.3897/biss.7.111453")
 
-+ Dmitry Mozzherin: Connecting Taxonomic Backbones using Global Names Tools, Oral Presentation, TDWG 2021, 10.3897/biss.5.75619
++ Dmitry Mozzherin: Connecting Taxonomic Backbones using Global Names Tools, Oral Presentation, TDWG 2021, #doi("10.3897/biss.5.75619")
 
-+ Dmitry Mozzherin: Biodiversity Heritage Library and Global Names: Successes, opportunities and the challenges for the future collaboration, Oral presentation, TDWG 2021, 10.3897/biss.5.75620
++ Dmitry Mozzherin: Biodiversity Heritage Library and Global Names: Successes, opportunities and the challenges for the future collaboration, Oral presentation, TDWG 2021, #doi("10.3897/biss.5.75620")
 
-+ Geoffrey Ower, Dmitry Mozzherin: Algorithms for connecting scientific names with literature in the Biodiversity Heritage Library via the Global Names Project and Catalogue of Life, Oral Presentation, TDWG 2021, 10.3897/biss.5.74114
++ Geoffrey Ower, Dmitry Mozzherin: Algorithms for connecting scientific names with literature in the Biodiversity Heritage Library via the Global Names Project and Catalogue of Life, Oral Presentation, TDWG 2021, #doi("10.3897/biss.5.74114")
 
-+ Dmitry Mozzherin, Alexander Myltsev, David Patterson: Finding scientific names in Biodiversity Heritage Library, or how to shrink Big Data, Oral Presentation, TDWG 2020, 10.3897/biss.3.35353
++ Dmitry Mozzherin, Alexander Myltsev, David Patterson: Finding scientific names in Biodiversity Heritage Library, or how to shrink Big Data, Oral Presentation, TDWG 2020, #doi("10.3897/biss.3.35353")
 
-+ Dmitry Mozzherin, Alexander Myltsev: A path to continuous reindexing of scientific names appearing in Biodiversity Heritage Library data, Oral Presentation, TDWG 2019, 10.3897/tdwgproceedings.1.20186
++ Dmitry Mozzherin, Alexander Myltsev: A path to continuous reindexing of scientific names appearing in Biodiversity Heritage Library data, Oral Presentation, TDWG 2019, #doi("10.3897/tdwgproceedings.1.20186")
 
 #subsection[Workshops]
 
@@ -591,9 +599,9 @@ The Google Summer of Code is a prestigious and competitive program. Google caref
 
   This workshop was organized with the purpose of coordinating development of
   Global Names tools with interested parties. Two main outcomes of this
-  workshop was the start of ongoing collaboration with Biodiversity Heritage
-  Library and setting up the process of continuous creation of BHL scientific
-  names index. Another outcome was collaboration with HathiTrust in creating a
+  workshop were the start of ongoing collaboration with the Biodiversity Heritage
+  Library and the establishment of a continuous BHL scientific names indexing
+  process. Another outcome was collaboration with HathiTrust in creating a
   scientific names index for their massive corpus.
 
 #subsubsection[Attended]
@@ -636,6 +644,6 @@ The Google Summer of Code is a prestigious and competitive program. Google caref
 
 #subsection[Social Media]
 
-GitHub is the most popular code repository and social media for
-programmers. I have 79 repositories at GitHub and main communication with
-users of these repositories is documented in approximately 1000 issues.
+GitHub is the most popular code repository and social network for
+programmers. I maintain 79 repositories on GitHub, with community
+interaction documented in approximately 1,000 issues.
