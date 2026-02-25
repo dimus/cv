@@ -18,6 +18,10 @@
   set par(justify: false, leading: 0.65em)
   show link: set text(fill: green)
   show "--": sym.dash.en
+  show bibliography: it => {
+    show regex("\[\d+\]"): m => m.text.slice(1, -1) + "."
+    it
+  }
   body
 }
 
@@ -52,7 +56,7 @@
   grid(
     columns: (dc, 1fr),
     column-gutter: gap,
-    align(right + top, text(fill: gray, size: 9.5pt, date)),
+    align(right + top, text(fill: dgray, size: 9.5pt, date)),
     block[
       *#title*, #emph[#inst], #loc
       #if dept != "" [ \ #emph[#dept]]
@@ -78,7 +82,7 @@
   grid(
     columns: (dc, 1fr),
     column-gutter: gap,
-    align(right + top, text(fill: gray, date)),
+    align(right + top, text(fill: dgray, date)),
     if comment != "" {
       grid(
         columns: (1fr, cc),

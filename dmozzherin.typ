@@ -4,13 +4,12 @@
 #show: cv-template
 
 // ── HEADER ─────────────────────────────────────────────────────────────────
-
 #grid(
   columns: (1fr, auto),
   column-gutter: 1em,
   [
     #text(size: 26pt, weight: "bold", fill: dgray)[Dmitry ]#text(
-      size: 26pt, weight: "bold", fill: green,
+      size: 26pt, weight: "bold", fill: dgray,
     )[Mozzherin]
     #v(0.2em)
     #text(size: 10pt, style: "italic", fill: gray)[Curriculum Vitae]
@@ -21,7 +20,7 @@
     #link("mailto:dmozzherin@gmail.com")[dmozzherin\@gmail.com] \
     #link("http://globalnames.org")[globalnames.org]
   ],
-  image("picture.jpg", height: 80pt),
+    image("picture.jpg", width: 80pt),
 )
 
 #v(0.5em)
@@ -62,7 +61,7 @@
   "Species File Group (SFG)",
   [Lead the development of Global Names Project (as a Primary Investigator
   of NSF DBI-645959). Create Scientific Names Index for Biodiversity
-  Heritage Library. Perform System Administration duties for SFG group],
+  Heritage Library. Perform System Administration tasks for SFG group],
 )
 
 #cv-entry(
@@ -150,22 +149,50 @@
 
 #bibliography("references.bib", style: "ieee", title: none)
 
-#pagebreak()
-
-#subsection[Service-Program Deliverables]
+#section[Service-Program Deliverables]
 
 #cv-item-comment(
-  "2022-present", [ZFS storage/backup administration],
+  "2022--2025", [ZFS storage/backup administration],
   "Provides reliable data environment for SFG",
 )
 
 #cv-item-comment(
-  "2015-present", [Kubernetes cluster administration],
+  "2015--present", [Kubernetes cluster administration],
   "Runs TaxonWorks, TaxonPages, GlobalNames services",
 )
 
 #cv-item-comment(
-  "2023-present",
+  "2025--present",
+  [#link("https://github.com/sfborg/gndb")[GNDB]],
+  "Flexible importer of any Species File Group Archive file to GNverifier database",
+)
+
+#cv-item-comment(
+  "2025--present",
+  [#link("https://github.com/sfborg/harvester")[Harvester]],
+  "Application to convert non-standard dataset to Species File Group Archive",
+)
+
+#cv-item-comment(
+  "2025--present",
+  [#link("https://github.com/sfborg/sf")[SF Converter]],
+  "Universal converter between a variety of biodiversity format based of Species File Group Archive",
+)
+
+#cv-item-comment(
+  "2024--present",
+  [#link("https://github.com/sfborg/sflib")[SFLib Library]],
+  "Universal converter between a variety of biodiversity format based of Species File Group Archive",
+)
+
+#cv-item-comment(
+  "2024--present",
+  [#link("https://github.com/sfborg/sfga")[SFGA Schema]],
+  "SQLite schema for Species File Group Archive",
+)
+
+#cv-item-comment(
+  "2023--present",
   [#link("https://github.com/gnames/bhlquest")[BHL Quest]],
   "Uses AI to answer biodiversity questions via Biodiversity Heritage Library corpus",
 )
@@ -182,8 +209,7 @@
   "Compares two checklist files",
 )
 
-Global Names Diff allows to run reconciliation and resolution locally,
-without Internet access.
+Global Names Diff allows to run reconciliation and resolution locally, without Internet access.
 
 #cv-item-comment(
   "2020--present",
@@ -209,9 +235,7 @@ without Internet access.
   "Scientific name finder",
 )
 
-Global Names Finder is very performant tool/library for scientific names
-detection. It allows to process 300,000 books aggregated in Biodiversity
-Heritage Library in less than 4 hours. GitHub stars: 37.
+Global Names Finder is very performant tool/library for scientific names detection. It allows to process 300,000 books aggregated in Biodiversity Heritage Library in less than 4 hours. GitHub stars: 53.
 
 #cv-item-comment(
   "2015--present",
@@ -219,9 +243,7 @@ Heritage Library in less than 4 hours. GitHub stars: 37.
   "Scientific name parsing",
 )
 
-Global Names Parser is the state of the art scientific names parsing
-program. It allows to process 30 million scientific names in less than
-5 minutes. GitHub Stars: 34.
+Global Names Parser is the state of the art scientific names parsing program. It allows to process 30 million scientific names in less than 5 minutes. GitHub Stars: 52.
 
 #cv-item-comment(
   "2015--present",
@@ -229,8 +251,7 @@ program. It allows to process 30 million scientific names in less than
   "Taxonomic resolution of scientific names",
 )
 
-This name reconciliation/resolution service is now succeeded by Global
-Names Verifier.
+This name reconciliation/resolution service is now succeeded by Global Names Verifier.
 
 #cv-item-comment(
   "2015--2018",
@@ -263,10 +284,7 @@ texts.
   "A library to determine edit distance between strings",
 )
 
-DamerauLevenshtein is library written in C and Ruby. It is used to
-calculate differences between strings. GitHub stars: 134, Number of
-#link("https://rubygems.org/gems/damerau-levenshtein")[RubyGem] downloads:
-2,178,033.
+DamerauLevenshtein is library written in C and Ruby. It is used to calculate differences between strings. GitHub stars: 150, Number of #link("https://rubygems.org/gems/damerau-levenshtein")[RubyGem] downloads: 4,322,641.
 
 #cv-item-comment(
   "2012--2017",
@@ -280,8 +298,7 @@ calculate differences between strings. GitHub stars: 134, Number of
   "A convertor of biodiversity resources to DarwinCore Archive",
 )
 
-DwCA Hunter is a tool for harvesting more than 100 data-sources used in
-Global Names Resolver and Global Names Verifier.
+DwCA Hunter is a tool for harvesting more than 100 data-sources used in Global Names Resolver and Global Names Verifier.
 
 #cv-item-comment(
   "2010--present",
@@ -289,9 +306,7 @@ Global Names Resolver and Global Names Verifier.
   "A DarwinCore Archive reader/writer",
 )
 
-DwCArchive is a library to create and consume data published as a Darwin
-Core Archive files. This library still actively used to harvest data for
-Global Names Resolver and Global Names Verifier.
+DwCArchive is a library to create and consume data published as a Darwin Core Archive files. This library still actively used to harvest data for Global Names Resolver and Global Names Verifier.
 
 #cv-item-comment(
   "2009--2020",
@@ -299,9 +314,7 @@ Global Names Resolver and Global Names Verifier.
   "A fuzzy-matching library for scientific names",
 )
 
-Taxamatch library was developed to make fuzzy-matching of scientific names
-possible. This project is now succeeded by fuzzy-matching abilities of
-Global Names Verifier.
+Taxamatch library was developed to make fuzzy-matching of scientific names possible. This project is now succeeded by fuzzy-matching abilities of Global Names Verifier.
 
 #cv-item-comment(
   "2009--2013",
@@ -318,9 +331,7 @@ hierarchies.
   "Global index of scientific names",
 )
 
-Global Names Index was the first attempt to create a
-reconciliation/resolution service. It is now succeeded by Global Names
-Verifier and Global Names Resolver.
+Global Names Index was the first attempt to create a reconciliation/resolution service. It is now succeeded by Global Names Verifier and Global Names Resolver.
 
 #cv-item-comment(
   "2008--present",
@@ -328,13 +339,8 @@ Verifier and Global Names Resolver.
   "Scientific names parser",
 )
 
-Biodiversity application and Ruby library was the first sophisticated
-scientific name parser. According to
-#link("https://biogems.info/")[BioRuby project] biodiversity Gem is the
-most downloadable biological library for Ruby language. It is 15 years old
-project and is still actively used by many Ruby-based applications. GitHub
-stars: 32, downloads according to
-#link("https://rubygems.org/gems/biodiversity")[RubyGem.org]: 218,000.
+Biodiversity application and Ruby library was the first sophisticated scientific name parser. According to #link("https://biogems.info/")[BioRuby project] biodiversity Gem is the most downloadable biological library for Ruby language. It is 15 years old project and is still actively used by many Ruby-based applications. GitHub stars: 36, downloads according to
+#link("https://rubygems.org/gems/biodiversity")[RubyGem.org]: 256,000.
 
 #cv-item-comment(
   "2008--2015",
@@ -342,10 +348,7 @@ stars: 32, downloads according to
   "An online Encyclopedia about known species (was one of developers)",
 )
 
-Encyclopedia of Life is one of the largest biodiversity projects, aiming
-to aggregate and organize data about life on Earth. I participated in its
-development, and for one year was the lead system administrator of the
-project.
+Encyclopedia of Life is one of the largest biodiversity projects, aiming to aggregate and organize data about life on Earth. I participated in its development, and for one year was the lead system administrator of the project.
 
 #cv-item-comment(
   "2000--2007",
@@ -353,18 +356,16 @@ project.
   "Biomedical publications alert service",
 )
 
-BioMail, a precursor to Google Scholar, enabled researchers to receive
-emails with newly published papers matching their specified search terms.
-At its peak, it served tens of thousands of users, processing millions of
-weekly search requests to the National Library of Medicine. The appearance
-of Google Scholar led to the discontinuation of BioMail's development.
+BioMail, a precursor to Google Scholar, enabled researchers to receive emails with newly published papers matching their specified search terms. At its peak, it served tens of thousands of users, processing millions of weekly search requests to the National Library of Medicine. The appearance of Google Scholar led to the discontinuation of BioMail's development.
 
-#subsection[Journal Editorship]
+#section[Journal Editorship]
 
 #cv-item-comment("2023", [Paper Review for Biodiversity Data Journal], "")
 #cv-item-comment("2019", [Paper Review for Applications in Plant Sciences], "")
 
-#subsection[Awards]
+#pagebreak()
+
+#section[Awards]
 
 #cv-item-comment(
   "2019",
@@ -434,12 +435,7 @@ of Google Scholar led to the discontinuation of BioMail's development.
   "Google Summer of Code",
 )
 
-The Google Summer of Code is a prestigious and competitive program. Google
-carefully chooses impactful Open Source projects and connects individuals
-from these projects with exceptionally talented and promising students
-globally. During the summer, mentors from these chosen projects guide the
-students in developing new applications and libraries, while Google
-provides financial support to the students from its funds.
+The Google Summer of Code is a prestigious and competitive program. Google carefully chooses impactful Open Source projects and connects individuals from these projects with exceptionally talented and promising students globally. During the summer, mentors from these chosen projects guide the students in developing new applications and libraries, while Google provides financial support to the students from its funds.
 
 #cv-item-comment(
   "2011, 2012",
@@ -460,16 +456,16 @@ provides financial support to the students from its funds.
 #subsection[Leadership Roles]
 
 #cv-item-comment(
-  "2019-2020",
+  "2019--2020",
   [CoPI on HathiTrust Research Center Advanced Collaborative Support award],
   "University of Illinois",
 )
 
-#cv-item("2015", [PI on NSF DBI-1645959, University of Illinois])
-#cv-item("2014", [CoPI on NSF DBI-1356347, Marine Biological Laboratory])
-#cv-item("2008-2014", [Project Leader, Encyclopedia of Life, Marine Biological Laboratory])
-#cv-item("2002", [PI on NLM G07LM007762-01, Stony Brook University])
-#cv-item("1985--1989", [Senior Engineer, Group leader, Omutninsk Chemical Plant])
+#cv-item-comment("2015", [PI on NSF DBI-1645959, University of Illinois],"")
+#cv-item-comment("2014", [CoPI on NSF DBI-1356347, Marine Biological Laboratory], "")
+#cv-item-comment("2008--2014", [Project Leader, Encyclopedia of Life, Marine Biological Laboratory], "")
+#cv-item-comment("2002", [PI on NLM G07LM007762-01, Stony Brook University], "")
+#cv-item-comment("1985--1989", [Senior Engineer, Group leader, Omutninsk Chemical Plant], "")
 
 #subsection[Project Management Experience]
 
@@ -515,6 +511,8 @@ provides financial support to the students from its funds.
   "University of Illinois",
 )
 
+#pagebreak()
+
 // ── EXTERNAL FUNDING ───────────────────────────────────────────────────────
 
 #section[External Funding]
@@ -558,17 +556,32 @@ provides financial support to the students from its funds.
   "University of Illinois",
 )
 
+#cv-item-comment(
+  "2013--2015",
+  [Leading System Administration for the Encyclopedia of Life],
+  "Marine Biological Laboratory",
+)
+
 // ── ENGAGEMENT AND OUTREACH ────────────────────────────────────────────────
 
 #section[Engagement and Outreach]
 
 #subsection[Academic Presentations (most recent)]
 
++ Mozzherin D, Paul D, Whitmire A (2024) Can We Standardize Name Reconciliaton via OpenRefine? Biodiversity Information Science and Standards 8: e134910. 10.3897/biss.8.134910 
+
++ Mozzherin D, Ower G (2024) SQLite: A “Frictionless” Solution for Exchange of Biodiversity Data? Biodiversity Information Science and Standards 8: e138931. 10.3897/biss.8.138931
+
 + Dmitry Mozzherin, Deborah Paul: Preservation Strategies for Biodiversity Data, Oral Presentation, TDWG 2023, 10.3897/biss.7.111453
+
 + Dmitry Mozzherin: Connecting Taxonomic Backbones using Global Names Tools, Oral Presentation, TDWG 2021, 10.3897/biss.5.75619
+
 + Dmitry Mozzherin: Biodiversity Heritage Library and Global Names: Successes, opportunities and the challenges for the future collaboration, Oral presentation, TDWG 2021, 10.3897/biss.5.75620
+
 + Geoffrey Ower, Dmitry Mozzherin: Algorithms for connecting scientific names with literature in the Biodiversity Heritage Library via the Global Names Project and Catalogue of Life, Oral Presentation, TDWG 2021, 10.3897/biss.5.74114
+
 + Dmitry Mozzherin, Alexander Myltsev, David Patterson: Finding scientific names in Biodiversity Heritage Library, or how to shrink Big Data, Oral Presentation, TDWG 2020, 10.3897/biss.3.35353
+
 + Dmitry Mozzherin, Alexander Myltsev: A path to continuous reindexing of scientific names appearing in Biodiversity Heritage Library data, Oral Presentation, TDWG 2019, 10.3897/tdwgproceedings.1.20186
 
 #subsection[Workshops]
@@ -586,6 +599,10 @@ provides financial support to the students from its funds.
 
 #subsubsection[Attended]
 
++ TaxonWorks Together 2025
++ TaxonWorks Hackathon 2025
++ TaxonWorks Together 2024
++ TaxonWorks Together 2023
 + Dmitry Mozzherin: Global Names --- how can you use it, Oral Presentation, Taxon Works Together 2023
 + Catalog of Life Annual Meeting 2022
 + TaxonWorks Together 2022
